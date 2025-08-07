@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Date</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="box">
+    <h2>Select the date for our special day 💖</h2>
+    <input type="date" id="datePicker" />
+    <button onclick="chooseDate()">Choose</button>
+  </div>
+  <script>
+    function chooseDate() {
+      const date = document.getElementById("datePicker").value;
+      if (date) {
+        localStorage.setItem("chosenDate", date);
+        window.location.href = "final.html";
+      }
+    }
+  </script>
+</body>
+</html>

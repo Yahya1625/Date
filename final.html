@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Date</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="hearts"></div>
+  <div class="box">
+    <h2 id="finalDate">Loading your special date...</h2>
+  </div>
+  <script>
+    document.getElementById("finalDate").innerText =
+      "Yay! Our date is: " + localStorage.getItem("chosenDate");
+  </script>
+</body>
+</html>
